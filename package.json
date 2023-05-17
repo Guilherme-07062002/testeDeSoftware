@@ -1,0 +1,15 @@
+{
+  "name": "testedesoftware",
+  "version": "1.0.0",
+  "description": "Anotações realizadas durante a disciplina de Teste de Software 5° Período",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
