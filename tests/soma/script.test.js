@@ -1,5 +1,11 @@
-const soma = require("./script/soma");
+const soma = require("./script").soma
 
-it("Somando dois números", () => {
-  expect(soma(2, 2)).toBe(4);
+describe("Testando função soma", () => {
+  it("Somando dois números", () => {
+    expect(soma(2, 2)).toBe(4);
+  });
+
+  it("Inserindo número inválido", () => {
+    expect(soma(-3, 2)).toBe(null);
+  });
 });
