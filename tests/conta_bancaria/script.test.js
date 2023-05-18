@@ -6,12 +6,16 @@ describe("Testando funções - Conta Bancária", () => {
       expect(sacar(50, 321)).toBe(true);
     });
 
-    it("Codigo inválido", () => {
+    it("Codigo inexistente", () => {
       expect(sacar(50, 0)).toBe(null);
     });
 
     it("Saldo insuficiente", () => {
       expect(sacar(50, 123)).toBe(null);
     });
+
+    it("Saque de valor negativo", () => {
+        expect(sacar(-10, 123)).toBe(null);
+      });
   });
 });
