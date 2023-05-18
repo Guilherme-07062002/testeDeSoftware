@@ -1,4 +1,4 @@
-const soma = require("./script").soma
+const soma = require("./script").soma;
 
 describe("Testando função soma", () => {
   it("Somando dois números", () => {
